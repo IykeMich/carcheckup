@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/Helvetica.ttf') format('woff'),
+       url('/public/Helvetica-Bold.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-helvetica {
+  font-family: 'Helvetica';
+}
+
+/* PLACEHOLDER */
+/* CSS styles */
+#reg-no::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.right-3-mine {
+  right: 0.40rem;
+}
+.top-3-mine {
+  top: 0.20rem;
+}
+
+/* PRICING CHECKS */
+.checklist {
+  transition:0.3s ease, opacity 0.3s ease;
+}
+.a_question {
+  transition:0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes pulse-shadow {
+  0% {
+    color: black;
+  }
+  30% {
+      color: #f36103;
+  }
+  70% {
+      color: #f36103;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.ani-pulse-shadow {
+  animation: pulse-shadow 5s infinite;
+}
+
+
+/* Pagination button styling */
+.pagination-button {
+  padding: 8px 16px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pagination-button:hover {
+  background-color: #ffc439;
+  border-color: #ffc439;
+  color: #000;
+}
+
+/* PLACEHOLDER reg-no */
+#reg-no {
+  color: black;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us-pink {
+  background: rgba(255, 224, 215, 0.2);
+}
+
+.navbar_items {
+    transition: .5s ease-in-out;
+}
+
+.navbar_items:hover {
+    color: #f36103;
+    text-decoration: underline;
+    transition: .5s, ease-in-out;
+}
+
+.navbar_btn {
+    background-color: rgba(0, 31, 126, 1);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    letter-spacing: -2.5%;
+}
+.nav_items_hover_blue:hover {
+  color: #001F7E;
+}
+
+.navbar {
+  border-bottom: #eee 8px solid;
+}
+/* HERO */
+.hero {
+    background-image: url("/public/img/hero_bg_darkened.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    /* height: 75vh; */
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.712);
+    /* opacity: .9; */
+}
+.hero_first_words {
+    font-family: 'Montserrat', sans-serif;
+}
+.hero_second_words {
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.hero_third_words {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.btn_hero_yellow {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: -0.5%;
+}
+
+/* HERO TWO */
+.font_montserrat {
+    font-family: 'Monteserrat', sans-serif;
+}
+.font_raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.font_poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.font-montserrat {
+    font-family: 'Monteserrat', sans-serif;
+}
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.orange_text {
+    color: rgba(243, 97, 3, 1);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+/* TEXT TO CHANGE BONUS IN PRICES PAGE */
+.parent-div:hover .text-to-change {
+  color: white;
+}
+
+/* FLOATING PLACEHOLDER */
+.input {
+  border-radius: 9.22px;
+  border: 1px solid #A4AFCE;
+}
+.placeholder {
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+}
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-16px) translateX(0px) scale(0.75);
+}
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #A4AFCE;
+}
+.input:focus ~ .placeholder {
+  color: #A4AFCE;
+  z-index: 1111;
+  background: rgb(243 244 246);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+
+/*  */
+.warning_ox_blood {
+  background-color: #BA3232;
+}
+.dark_yellow {
+  background: #FFC439;
+}
+
+/* Carousel on small screens */
+
+
+.card:not(:focus):not(:hover) {
+  width: 32;
+  opacity: 50;
+}
+
+.card:focus,
+.card:hover {
+  width: full;
+  opacity: 100;
+}
+
+/* Grid on large screens */
+@media (min-width: 1024px) {
+
+  .card {
+    width: full; 
+    opacity: 100;
+  }
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-out;
+  animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation ends */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out;
+  animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation ends */
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slideInTop {
+  animation: slideInTop 1s ease-out;
+  animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation ends */
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slideInBottom {
+  animation: slideInBottom 1s ease-out;
+  animation-fill-mode: forwards; /* Ensures the element stays in its final state after the animation ends */
+}

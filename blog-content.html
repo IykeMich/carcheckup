@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCheckUp</title>
+    <!-- font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/style.css">
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./public/new-swiper.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="pb-24">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-[#9c9c9b]">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between py-3 md:py-6 mx-2 md:mx-4 lg:mx-8">
+                <!-- Logo -->
+                <div class="pt-1">
+                    <a href="homepage.html"><img src="/public/img/navbar logo.svg" class="h-10" alt="Carcheckup Logo" /></a>
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden space-x-5 lg:space-x-8 xl:space-x-12 md:flex">
+                    <a href="homepage.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Home</a>
+                    <a href="blog.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Blog</a>
+                    <a href="prices.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Prices</a>
+                    <a href="report-sample.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Report
+                        Sample</a>
+                    <a href="popular-checks.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Popular
+                        Checks</a>
+                    <a href="about-us.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Contact
+                        Us</a>
+                </div>
+                <!-- Button -->
+                <a href="sign-up.html" class="hidden p-2 px-6 py-auto md:px-2 font_montserrat font-medium hover:font-semibold transition duration-300 hover:scale-110 
+                    md:text-[12px] lg:text-[18px] xl:text-[20px] text-white  bg-nav_btn_bg rounded baseline
+                        hover:bg-orange-custom md:block">SIGN UP</a>
+
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="homepage.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="prices.html">Prices</a>
+                    <a href="report-sample.html">Report Sample</a>
+                    <a href="popular-checks.html">Popular Checks</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="sign-up.html">Sign Up</a>
+                </div>
+
+
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- content -->
+    <!-- Mobile Header -->
+        <section class="flex md:hidden w-full bg-[#001f7e] flex-col">
+            <div class="mx-auto mt-12">
+                <div
+                    class="3-stars flex flex-row text-white font_montserrat font-normal text-9.2 leading-10.39 tracking-[-0.5] space-x-1">
+                    <p class="flex space-x-0.5"><img class="w-3 h-3" src="public/img/blog_imgs/star.svg" alt="">
+                        <span> Free Initial Report </span>
+                    </p>
+                    <p class="flex space-x-0.5"><img class="w-3 h-3" src="public/img/blog_imgs/star.svg" alt="">
+                        <span> 30K Data Guarantee </span>
+                    </p>
+                    <p class="flex space-x-0.5"><img class="w-3 h-3" src="public/img/blog_imgs/star.svg" alt="">
+                        <span> 24/7 Customer Care </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mx-4 mt-4">
+                <p class=" text-white text-center font-montserrat font-normal text-10.78
+                        leading-13.17 tracking-[-0.5]">
+                    Discover if the vehicle has been stolen, written-off, has outstanding finance, and more.
+                </p>
+            </div>
+
+            <button type="button" id="submit-button"
+                    class="flex mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12 rounded-full border-none overflow-y-hidden">
+                    <div class="star w:1/3 border-s border-[#facd11] bg-[#001e80] rounded-l-full ">
+                        <div
+                            class=" mt-2.5 md:mt-6 lg:mt-6 xl:mt-8 mb-2.5 md:mb-5 lg:mb-6 xl:mb-7 space-y-1 mx-2 md:mx-4 xl:mx-6">
+                            <img class="ml-1.5 w-[14px] md:w-[24px] lg:w-[32px] xl:w-[40px] h-[12px] md:h-[20px] lg:h-[30px] xl:h-[36px]"
+                                src="/public/img/loading_gb.svg" alt="">
+                            <p class="pl-2 text-[#facd11] font-helvetica font-normal text-7.41 md:text-12 lg:text-20 xl:text-24 leading-9.54 md:leading-18.78
+                                xl:leading-31.88">
+                                GB</p>
+                        </div>
+                    </div>
+
+                    <div class="second-section w:2/3 bg-[#FACD11] m-0 border-none rounded-r-full">
+                        <div class="md:my-2 lg:my-4 flex flex-row">
+                            <div class="flex my-1.5 md:my-2">
+                                <input type="text" id="reg-no" placeholder="ENTER REG NO"
+                                    class="text-center bg-transparent
+                                    text-black mx-2 lg:mx-16 md:pt-2 font-helvetica font-normal text-12 md:text-24 xl:text-36 
+                                    leading-18.78 md:leading-28.18 xl:leading-41.4 tracking-[-0.5] border-none outline-none">
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full submit bg-[#f36103] ml-4 mr-2 my-1 md:mb-0.5 lg:mb-0 xl:my-0.5
+                            size-9 md:size-16 xl:size-24 animate duration-300 hover:scale-110 hover:bg-[#001e80] animate-pulse">
+                                <img src="/public/img/arrow.svg"
+                                    class="w-4 md:w-6 lg:w-8 xl:w-12 h-4 md:h-6 lg:h-8 xl:h-12" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </button>
+
+            <div class="mt-2 mb-4 border border-white mx-20">
+                <div class="text-center px-4">
+                    <p
+                        class="inline-flex font-montserrat text-white font-medium 
+                            text-9.76 leading-17.96 pt-2 xl:space-x-2">
+                        <span>Review us on </span>
+                        <span> <img class="w-full h-2/4 xl:h-auto" src="public/img/blog_imgs/star yellow.svg" alt="">
+                        </span>
+                        <span> Trustpilot </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <section class="blog-headline">
+        <div class="text-start mx-4 md:mx-8">
+            <p class="flex text-start mt-4 md:pr-20 lg:pr-56 xl:pr-64 text-[#F36103] font-raleway font-semibold text-19.2 md:text-24 lg:text-36 xl:text-48
+            leading-20.29 md:leading-32.4 lg:leading-40.96 xl:leading-56.35 tracking-tight">
+                What to Do After Failing an MOT Test? Your Top Questions Answered.
+            </p>
+
+            <p class="text-[#A4AFCE] font-montserrat font-normal text-9.6 md:text-16 lg:text-24 tracking-tighter leading-9.6 md:leading-16 lg:leading-22.54
+                xl:leading-29.26">
+                Posted a Month ago
+            </p>
+        </div>
+        <!-- Main -->
+        <div class="mt-4 mx-4 md:mx-8 mb-12 flex flex-col">
+            <div class="flex flex-row space-x-3">
+                <div class="md:w-2/3 items-start justify-start">
+                    <div class="mx-auto w-full">
+                        <img class="overflow-hidden w-full h-auto xl:h-1/4"
+                            src="./public/img/blog_imgs/blog-content.svg" alt="">
+                    </div>
+                    <div class="mx-auto w-full pt-4 lg:pr-4">
+                        <h3 class="font-montserrat text-11.2 md:text-14 lg:text-20 xl:text-28 leading-13.65 md:leading-20.29 lg:leading-28.42
+                            xl:leading-34.13 tracking-[2] text-justify">
+                            As the world deals with the issue of climate change, the automotive industry finds itself
+                            face to
+                            face battle against
+                            global warming and climate change. The recent “ECCA 2023” 6th European Climate Change
+                            Adaptation
+                            Conference 2023, which
+                            took place from 19 to 21 June 2023 in Dublin, Ireland underscored the urgent need to address
+                            GGE -
+                            greenhouse gas
+                            emissions and their far-reaching implications. In this article, we’ll talk about the
+                            considerable
+                            influence of global
+                            warming on the automotive sector, examining its role in contributing to CO2 emissions, the
+                            challenges it faces, and the
+                            innovative solutions that are reshaping the industry's landscape.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex md:w-1/3">
+                    <div class="mx-auto w-full bg-[#001f7e]">
+
+                        <div class="mx-4 lg:mx-8 xl:mx-12 mt-4 xl:mt-8">
+                            <div class="3-stars text-white font_montserrat font-normal text-16.48 lg:text-24 xl:text-32.4 leading-18.78 lg:leading-29.26 tracking-[-0.5%]
+                            space-y-4 xl:space-y-6">
+                                <p class="flex flex-row space-x-2"><img src="public/img/blog_imgs/star.svg" alt="">
+                                    <span class="">Free
+                                        Initial Report </span>
+                                </p>
+                                <p class="flex flex-row space-x-2"><img src="public/img/blog_imgs/star.svg" alt="">
+                                    <span class="">30K
+                                        Data Guarantee </span>
+                                </p>
+                                <p class="flex flex-row space-x-2"><img src="public/img/blog_imgs/star.svg" alt="">
+                                    <span class="">24/7
+                                        Customer Care </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mx-4 lg:mx-8 xl:mx-12 mt-4 xl:mt-8">
+                            <h1 class="font_raleway font-bold text-28 lg:text-32 xl:text-40.96 capitalize text-white 
+                                leading-24.38 lg:leading-36.18 xl:leading-48.09 tracking-[3]">
+                                best car history check
+                            </h1>
+                        </div>
+
+                        <div class="mx-4 lg:mx-8 xl:mx-12 mt-4 xl:mt-8">
+                            <p class=" text-white font-montserrat font-normal text-16.48 lg:text-20.62 xl:text-25.6 
+                                leading-18.78 lg:leading-24.38 xl:leading-31.21 tracking-[-0.5]">
+                                Discover if the vehicle has been stolen, written-off, has outstanding finance, and more.
+                            </p>
+                        </div>
+
+                        <div class="buttons space-y-4 xl:space-y-8 mt-4 xl:mt-8 mx-4 lg:mx-8 xl:mx-12">
+                            <div class="bg-[#facd11] text-center rounded-md">
+                                <input id="reg-no" type="text" placeholder="ENTER REG NO" class="bg-transparent border-none outline-none 
+                                font-helvetica font-normal text-16.48 lg:text-20.62 xl:text-26.51 py-2">
+                            </div>
+
+                            <div
+                                class="bg-orange-custom text-center rounded-md text-white hover:bg-black">
+                                <input id="submit-button" class="font-helvetica font-normal text-16.48 lg:text-20.62 xl:text-26.51 py-2"
+                                    type="submit" value="ENTER">
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="mx-4 lg:mx-8 xl:mx-12 px-4 my-4 xl:mt-12 border border-white">
+                            <div class="text-center">
+                                <p
+                                    class="inline-flex font-montserrat text-white py-2 font-medium 
+                                    text-12 lg:text-14.4 xl:text-26.51 leading-17.96 lg:leading-16.6 xl:leading-25.96 pt-4">
+                                    <span>Review us on </span>
+                                    <span> <img class="w-full h-2/4 xl:h-auto"
+                                            src="public/img/blog_imgs/star yellow.svg" alt=""> </span>
+                                    <span> Trustpilot </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-auto w-full md:mt-8 lg:mt-12 pt-4">
+                <h1 class="font-raleway font-medium text-16 md:text-24 lg:36 xl:text-40 leading-18.78 md:leading-24.38 lg:leading-36.18 xl:leading-46.96
+                    tracking-[2] pb-2">
+                    Transport Sector's Carbon Footprint
+                </h1>
+                <h5 class="font-montserrat text-11.2 md:text-14 lg:text-20 xl:text-28 leading-13.65 md:leading-20.29 lg:leading-28.42
+                xl:leading-34.13 tracking-[2]">
+                    The transport sector, responsible for approximately 23% of total energy-related CO2 emissions, holds
+                    a significant stake
+                    in the global emissions crisis. This segment of emissions is projected to grow disproportionately as
+                    per capita
+                    transport demand accelerates. The International Panel on Climate Change (IPCC) warns that without
+                    intervention,
+                    transport emissions could outpace those from other sectors, posing a grave threat to the
+                    environment.
+                </h5>
+            </div>
+
+            <div class="mx-auto w-full mt-4">
+                <h1 class="font-raleway font-medium text-16 md:text-24 lg:36 xl:text-40 leading-18.78 md:leading-24.38 lg:leading-36.18 xl:leading-46.96
+                    tracking-[2] pb-2">
+                    Road
+                    Vehicles and CO2 Emissions</h1>
+                <h5 class="font-montserrat text-11.2 md:text-14 lg:text-20 xl:text-28 leading-13.65 md:leading-20.29 lg:leading-28.42
+                xl:leading-34.13 tracking-[2]">
+                    Within the transport sector, road vehicles, including cars, trucks, buses, and two- and
+                    three-wheelers, account for
+                    nearly three-quarters of transport-related CO2 emissions. While the COVID-19 pandemic led to a
+                    temporary decrease in
+                    road transport activity due to lockdowns, emissions are expected to rebound as economic activity
+                    resumes. The need for
+                    action is clear, and governments and regulators worldwide are recognizing the pivotal role that the
+                    automotive industry
+                    plays in shaping the emissions landscape.
+                </h5>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="w-full items-start justify-start">
+                    <div class="mt-8">
+                        <div class="mx-auto w-full">
+                            <img class="overflow-hidden w-full h-auto" src="./public/img/blog_imgs/blog-content-2.svg"
+                                alt="">
+                        </div>
+
+                        <div class="mx-auto w-full pt-6">
+                            <h1 class="font-raleway font-medium text-16 md:text-24 lg:36 xl:text-40 leading-18.78 md:leading-24.38 lg:leading-36.18 xl:leading-46.96
+                                tracking-[2] pb-2">
+                                Challenges and Innovations
+                            </h1>
+                            <h3 class="font-montserrat text-11.2 md:text-14 lg:text-20 xl:text-28 leading-13.65 md:leading-20.29 lg:leading-28.42
+                                xl:leading-34.13 tracking-[2]">
+                                The transition to electric vehicles is not without challenges. Issues such as range
+                                anxiety,
+                                charging infrastructure,
+                                battery costs, and sustainable hydrogen production need to be addressed to ensure the
+                                mass
+                                adoption of EVs.
+                                Nevertheless, automakers, research groups, and startups are actively working on
+                                solutions to
+                                overcome these hurdles and
+                                accelerate the shift to electrification.
+                            </h3>
+                        </div>
+                        <div class="mx-auto w-full pt-4">
+
+                            <h1 class="font-raleway font-medium text-16 md:text-24 lg:36 xl:text-40 leading-18.78 md:leading-24.38 lg:leading-36.18 xl:leading-46.96
+                                tracking-[2] pb-2">
+                                Conclusion</h1>
+
+                            <h3 class="font-montserrat text-11.2 md:text-14 lg:text-20 xl:text-28 leading-13.65 md:leading-20.29 lg:leading-28.42
+                                xl:leading-34.13 tracking-[2]">
+                                The automotive industry finds itself at a crossroads, poised to shape the future of
+                                transportation and combat global
+                                warming. The urgency to reduce CO2 emissions and address climate change has led to a
+                                paradigm
+                                shift in the sector. As
+                                governments, regulators, and automakers align their efforts, the path to greener
+                                transportation
+                                becomes clearer.
+                                Electric vehicles, once a novelty, are emerging as the cornerstone of a sustainable
+                                future, and
+                                the industry's
+                                commitment to innovation, efficiency, and responsible practices will pave the way for
+                                tomorrow's
+                                winners on the road to
+                                a low-carbon economy.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Main End -->
+
+    </section>
+    <!-- content end -->
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="first-footer bg-purple-50">
+            <div class="flex flex-row pt-6 md:pt-12 mx-4 lg:mx-8 space-x-6 md:space-x-12">
+                <!-- FIRST COLUMN -->
+                <div class="w-1/2 md:w-1/3">
+                    <div class="text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-'-0.5%'">
+                                Premuim Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Certificate of Destruction Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle High Risk Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Condition Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Ved Co2 Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine and Technical Information Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Outstanding Finance Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Plate Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Weight and Dimension Details Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Motorcycle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Truck History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle CO2 Emission Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Performance Data Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VSC Count Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Imported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Number Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VIC Inspected Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Scrapped Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Previous Owners Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Check If Your Vehicle Was Used Before First Registration</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                VIN Lookup</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                    Know About Us</p>
+                            </a>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Product & Prices</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Frequently Asked Questions</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Contact Us</p>
+                            </a>
+
+                            <p class="pt-4 pb-2 font-semibold font_montserrat text-[10.34px] line-[7.72px]">Legal
+                                Information</p>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Terms & Conditions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD SECOND COLUMN -->
+                <div class="text-start w-1/2 md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Free Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Make and Model Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Exported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Wheel Plan Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Payment Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Car HPI Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Vehicle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Fuel Type Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Size Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Manufacture Year Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Last VSC Issue Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Mileage Issue Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free MOT History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle SORN Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Electric Vehicle Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Van History Check</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[0.5%]">
+                                    connect with Us</p>
+                            </a>
+
+                            <div class="social_icons items-start justify-start flex flex-row space-x-2 md:space-x-3">
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD THIRD COLUMN -->
+                <div class="text-start hidden md:flex md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#about-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Know About Us
+                            </p>
+                        </a>
+
+                        <a href="#product-prices">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Product & Prices
+                            </p>
+                        </a>
+
+                        <a href="#faq">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Frequently Asked Questions
+                            </p>
+                        </a>
+
+                        <a href="#contact-us">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Contact Us
+                            </p>
+                        </a>
+
+                        <a href="#legal-information">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Legal Information
+                            </p>
+                        </a>
+
+                        <a href="#terms-conditions">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Terms & Conditions
+                            </p>
+                        </a>
+
+                        <a href="#useful-links">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Useful Link
+                            </p>
+                        </a>
+
+                        <a href="#sample-report">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                See Sample Vehicle History Report
+                            </p>
+                        </a>
+
+                        <a href="#redeem-checks">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Redeem Prepaid Checks
+                            </p>
+                        </a>
+
+                        <a href="#connect-with-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Connect with Us
+                            </p>
+                        </a>
+
+                        <div class="social_icons items-start justify-start flex flex-row space-x-3">
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-center items-center mt-4 md:mt-8 md:pb-12">
+                <p class="text-center pb-2 font_montserrat font-semibold text-[19.2px] md:pb-8 md:text-32 lg:text-40 leading-23.4 md:leading-48.76 orange_text
+                        tracking-'-0.5%'">
+                    Download Our Mobile App
+                </p>
+                <div class="flex flex-row justify-center items-center md:space-x-6">
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/google play.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/apple store.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-footer mx-4 lg:mx-8">
+
+            <div class="sponsors mt-12 justify-evenly items-center flex flex-row mb-4 md:mb-12">
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Powered by</p>
+                    <img class="w-[89.69px] h-[29.01px] md:w-[262.24px] md:h-[56px] lg:w-[311.41px] lg:h-[100.74px]"
+                        src="./public/img/social_icon_imgs/experian.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        We Accept</p>
+                    <img class="w-[116.12px] h-[26.78px] md:w-[340.24px] md:h-[56px] lg:w-[403.7px] lg:h-[93.28px]"
+                        src="./public/img/social_icon_imgs/visa mastercard.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Secured With</p>
+                    <img class="w-[78px] h-[25.54px] md:w-[210.24px] md:h-[56px] lg:w-[271.7px] lg:h-[78.28px]"
+                        src="./public/img/social_icon_imgs/azure.svg" alt="">
+                </div>
+            </div>
+
+            <div class="justify-center items-center">
+                <p class="text-center font_montserrat font-light md:font-normal text-9.6 md:text-16 lg:text-20 leading-11.7 md:leading-24.38"
+                    style="letter-spacing: -0.5%;">
+                    Milena Software Ltd, a company registered in England and Wales with company number 12117374, is a
+                    VAT registered company, and its VAT Registration Number is GB358417280.
+                    Milena Software Ltd owns the rights to carcheckup.co.uk, a product offered on this website. Please
+                    note that we use cookies on this site. By continuing to browse and use this website,
+                    you are consenting to our use of cookies.
+                    All product names, logos, and brands featured on this website belong to their respective owners and
+                    are protected by copyright laws. All rights reserved.
+                </p>
+            </div>
+
+            <div
+                class="social_icons items-center justify-center mt-4 md:mt-8 mb-10 md:mb-20 flex flex-row space-x-1.5 lg:space-x-3">
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110" src="./public/img/social_icon_imgs/fb-icon.svg"
+                        alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({
+            // offset: 200, // offset (in px) from the original trigger point
+            // delay: 100, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+        }); 
+    </script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/faq.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="./src/js/new-swiper.js"></script>
+</body>
+
+</html>

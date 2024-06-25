@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCheckUp</title>
+    <!-- font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/style.css">
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/new-swiper.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <section class="mb-12 md:mb-0 md:pb-24">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-[#9c9c9b]">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between py-3 md:py-6 mx-2 md:mx-4 lg:mx-8">
+                <!-- Logo -->
+                <div class="pt-1">
+                    <a href="homepage.html"><img src="/public/img/navbar logo.svg" class="h-10"
+                            alt="Carcheckup Logo" /></a>
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden space-x-5 lg:space-x-8 xl:space-x-12 md:flex">
+                    <a href="homepage.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Home</a>
+                    <a href="blog.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Blog</a>
+                    <a href="prices.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Prices</a>
+                    <a href="report-sample.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Report
+                        Sample</a>
+                    <a href="popular-checks.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Popular
+                        Checks</a>
+                    <a href="about-us.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Contact
+                        Us</a>
+                </div>
+                <!-- Button -->
+                <a href="sign-up.html" class="hidden p-2 px-6 py-auto md:px-2 font_montserrat font-medium hover:font-semibold transition duration-300 hover:scale-110 
+                    md:text-[12px] lg:text-[18px] xl:text-[20px] text-white  bg-nav_btn_bg rounded baseline
+                        hover:bg-orange-custom md:block">SIGN UP</a>
+
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="homepage.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="prices.html">Prices</a>
+                    <a href="report-sample.html">Report Sample</a>
+                    <a href="popular-checks.html">Popular Checks</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="sign-up.html">Sign Up</a>
+                </div>
+
+
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- HERO -->
+    <section class="hero_section">
+        <div class="hero">
+            <div class="words mx-0 lg:mx-12 mb-4 lg:mb-12 pb-2 lg:pb-12 px-2">
+                <div data-aos="fade-down" data-aos-easing="ease-in-sine"
+                    class="pt-10 md:pt-20 justify-center text-white text-center flex space-x-2 md:space-x-4 lg:space-x-8">
+                    <p class="font-montserrat font-normal text-8 md:text-14 lg:text-20 xl:text-24 mx-0 lg:mx-5 flex flex-row md:font-medium
+                        leading-11.47 md:leading-29.26 tracking-[-0.5]">
+                        <img class="h-[8px] w-[8px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px] xl:h-[30px] xl:w-[30px] mx-1 md:mt-1 lg:mt-0.5
+                        xl:mt-0" src="/public/img/star_vector.svg" alt=""> Free Initail Report
+                    </p>
+                    <p class="font-montserrat font-normal text-8 md:text-14 lg:text-20 xl:text-24 mx-0 lg:mx-5 flex flex-row md:font-medium
+                        leading-11.47 md:leading-29.26 tracking-[-0.5]">
+                        <img class="h-[8px] w-[8px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px] xl:h-[30px] xl:w-[30px] mx-1 md:mt-1 lg:mt-0.5
+                        xl:mt-0" src="/public/img/star_vector.svg" alt=""> 30k Data Guarantee
+                    </p>
+                    <p class="font-montserrat font-normal text-8 md:text-14 lg:text-20 xl:text-24 mx-0 lg:mx-5 flex flex-row md:font-medium
+                        leading-11.47 md:leading-29.26 tracking-[-0.5]">
+                        <img class="h-[8px] w-[8px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px] xl:h-[30px] xl:w-[30px] mx-1 md:mt-1 lg:mt-0.5
+                        xl:mt-0" src="/public/img/star_vector.svg" alt=""> 24/7 Customer Services
+                    </p>
+                </div>
+                <div data-aos="zoom-in" data-aos-easing="ease-in-sine" class="text-center pt-3 md:pt-6 px-2">
+                    <p class="fomt-raleway text-white font-bold text-24 md:text-48 lg:text-64 leading-28.18 lg:leading-75.14
+                    tracking-[3] lg:tracking-[7]">Best Car History Check</p>
+                </div>
+
+                <div data-aos="fade-right" data-aos-easing="ease-in-sine"
+                    class="text-center pt-3 md:pt-12 lg:pt-6 mx-4 md:px-6 lg:px-0 xl:px-4">
+                    <p class="hero_third_words font-normal font-montserrat text-12 md:text-24 lg:text-40 leading-14.63 md:leading-29.26 lg:leading-48.76
+                    tracking-[-0.5%]">Discover if the vehicle has
+                        been stolen, written-off, has outstanding finance, and more.</p>
+                </div>
+
+                <button type="button" id="submit-button"
+                    class="flex mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12 rounded-full border-none overflow-y-hidden">
+                    <div class="star w:1/3 border-none bg-[#001e80] rounded-l-full ">
+                        <div
+                            class=" mt-2.5 md:mt-6 lg:mt-6 xl:mt-8 mb-2.5 md:mb-5 lg:mb-6 xl:mb-7 space-y-1 mx-2 md:mx-4 xl:mx-6">
+                            <img class="ml-1.5 w-[14px] md:w-[24px] lg:w-[32px] xl:w-[40px] h-[12px] md:h-[20px] lg:h-[30px] xl:h-[36px]"
+                                src="/public/img/loading_gb.svg" alt="">
+                            <p class="pl-2 text-[#facd11] font-helvetica font-normal text-7.41 md:text-12 lg:text-20 xl:text-24 leading-9.54 md:leading-18.78
+                                xl:leading-31.88">
+                                GB</p>
+                        </div>
+                    </div>
+
+                    <div class="second-section w:2/3 bg-[#FACD11] m-0 border-none rounded-r-full">
+                        <div class="md:my-2 lg:my-4 flex flex-row">
+                            <div class="flex my-1.5 md:my-2">
+                                <input type="text" id="reg-no" placeholder="ENTER REG NO"
+                                    class="text-center bg-transparent
+                                    text-black mx-2 lg:mx-16 md:pt-2 font-helvetica font-normal text-12 md:text-24 xl:text-36 
+                                    leading-18.78 md:leading-28.18 xl:leading-41.4 tracking-[-0.5] border-none outline-none">
+                            </div>
+                            <div
+                                class="flex justify-center items-center rounded-full submit bg-[#f36103] ml-4 mr-2 my-1 md:mb-0.5 lg:mb-0 xl:my-0.5
+                            size-9 md:size-16 xl:size-24 animate duration-300 hover:scale-110 hover:bg-[#001e80] animate-pulse">
+                                <img src="/public/img/arrow.svg"
+                                    class="w-4 md:w-6 lg:w-8 xl:w-12 h-4 md:h-6 lg:h-8 xl:h-12" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+
+
+                <div class="flex flex-col justify-center items-center lg:space-y-2">
+                    <a href="#">
+                        <p class="font-montserrat font-medium text-white text-10 md:text-16 lg:text-24 leading-11.47 md:leading-21.96 lg:leading-29.26 tracking-[-0.5] 
+                        py-1 hover:underline hover:animate duration-500 hover:scale-110 hover:ease-in">Redeem
+                            Voucher Code</p>
+                    </a>
+                    <a href="#">
+                        <p class="font-montserrat font-medium text-white text-10 md:text-16 lg:text-24 leading-11.47 md:leading-21.96 lg:leading-29.26 tracking-[-0.5] 
+                        py-1 hover:underline hover:animate duration-500 hover:scale-110 hover:ease-in">Popular
+                            Vehicle Inspections</p>
+                    </a>
+                    <a href="#">
+                        <p class="font-montserrat font-medium text-white text-10 md:text-16 lg:text-24 leading-11.47 md:leading-21.96 lg:leading-29.26 tracking-[-0.5] 
+                        py-1 hover:underline hover:animate duration-500 hover:scale-110 hover:ease-in">Sample
+                            Vehicle Inspection Report</p>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF HERO -->
+
+
+    <!-- HERO 2 -->
+    <div data-aos="fade-up" class="hero_two mx-0">
+        <div class="hero_two_contents flex flex-row justify-center items-center space-x-3 mt-5 mb-3">
+            <img class="w-[103.13px] h-[40px] md:w-[294.56px] md:h-[114.67px]" src="/public/img/experian.svg" alt="">
+            <img class="w-[108.85px] h-[35px] md:w-[311px] md:h-[100px]" src="/public/img/trustpilot.svg" alt="">
+        </div>
+    </div>
+    <!-- HERO 2 -->
+
+    <!-- WHY CHOOSE US -->
+    <section class="why_choose_us">
+
+        <div data-aos="zoom-in" class="justify-center items-center pt-6 md:pt-15 flex flex-col md:flex-col-reverse">
+            <p class="text-center text-[#F36103] font-montserrat font-medium text-12 md:text-19.2
+            lg:text-28 leading-10.97 md:leading-18.78 lg:leading-28.18">
+                WHY PEOPLE TRUST US
+            </p>
+            <p class="text-center px-4 py-2 md:py-4 font-raleway font-normal text-15 md:text-28
+            lg:text-36 leading-17.61 md:leading-24.38 lg:leading-29.26">
+                Trusted by Millions: Your Top Car History Check Destination
+            </p>
+        </div>
+
+        <!-- THE CARDS -->
+        <section class="cards-section">
+            <div class="flex md:hidden">
+                <div class="swiper mySwiper mt-12">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div data-aos="fade-up" class="flex flex-col items-center px-6 py-4 rounded-lg border shadow-xl bg-white
+                                    hover:border-orange-500 cursor-pointer motion-safe:duration-[1000ms]">
+                                    <img src="./public/img/our_car_check.svg" alt="" class="">
+                                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                                        lg:text-21.28 lg:leading-25.94">
+                                        Our Car Checks</h5>
+                                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                                        lg:text-21.28 lg:leading-27.43 md:font-light">
+                                        50+ checks are performed including
+
+                                        stolen check(Police & insurance)
+                                        Written off vehicle check
+                                        outstanding finance check
+                                        mot history records
+                                        all plates changes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div data-aos="fade-up" class="flex flex-col items-center px-6 py-4 space-y-4 rounded-lg border shadow-xl bg-white
+                                    hover:border-orange-500 cursor-pointer motion-safe:duration-[1500ms]">
+                                    <img src="./public/img/30000 guarantee.svg" alt=""
+                                        class="md:w-3/4 lg:w-2/4 md:h-3/4 lg:h-1.5/4">
+                                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                                        lg:text-21.28 lg:leading-25.94">
+                                        30,000 Data Guarantee</h5>
+                                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                                        lg:text-21.28 lg:leading-27.43 md:font-light">
+                                        Our Gold Check with a 30,000 data Guarantee. so you’re in safe hands. we’ve got
+                                        you covered,
+                                        every
+                                        time you check a vehicle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div data-aos="fade-up" class="flex flex-col items-center px-6 py-4 space-y-4 rounded-lg border shadow-xl bg-white
+                                    hover:border-orange-500 cursor-pointer motion-safe:duration-300">
+                                    <img src="./public/img/our_customers_rate_us.svg" alt=""
+                                        class="md:w-3/4 lg:w-2/4 md:h-3/4 lg:h-1.5/4">
+                                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                                        lg:text-21.28 lg:leading-25.94">
+                                        Our Customers rate us Highly</h5>
+                                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                                        lg:text-21.28 lg:leading-27.43 md:font-lightt">
+                                        Over 50,000+ratings across all platforms. a 4.9 overall satisfaction rating. 5
+                                        star excellence
+                                        award
+                                        winner
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination" style="margin: bottom 0;"></div>
+                </div>
+            </div>
+
+            <div
+                class="hidden md:flex flex-col mx-2 md:mx-12 mb-12 mt-10 md:mt-24 md:flex-row md:space-x-4 lg:space-x-6 space-y-3">
+                <!-- CARD 1 -->
+                <div data-aos="fade-up" class="mx-2 md:mx-0 flex flex-col items-center px-6 py-4 space-y-4 rounded-lg border shadow-xl bg-white md:w-1/3
+                        hover:border-orange-500 cursor-pointer motion-safe:duration-[1000ms]">
+                    <img src="./public/img/our_car_check.svg" alt="" class="">
+                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                            lg:text-21.28 lg:leading-25.94">
+                        Our Car Checks</h5>
+                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                            lg:text-21.28 lg:leading-27.43 md:font-light">
+                        50+ checks are performed including
+
+                        stolen check(Police & insurance)
+                        Written off vehicle check
+                        outstanding finance check
+                        mot history records
+                        all plates changes
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div data-aos="fade-up" class="mx-2 md:mx-0 flex flex-col items-center px-6 py-4 space-y-4 rounded-lg border shadow-xl bg-white md:w-1/3
+                        hover:border-orange-500 cursor-pointer motion-safe:duration-[1500ms]">
+                    <img src="./public/img/30000 guarantee.svg" alt="" class="md:w-3/4 lg:w-2/4 md:h-3/4 lg:h-1.5/4">
+                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                            lg:text-21.28 lg:leading-25.94">
+                        30,000 Data Guarantee</h5>
+                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                            lg:text-21.28 lg:leading-27.43 md:font-light">
+                        Our Gold Check with a 30,000 data Guarantee. so you’re in safe hands. we’ve got you covered,
+                        every
+                        time you check a vehicle
+                    </p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div data-aos="fade-up" class="mx-2 md:mx-0 flex flex-col items-center px-6 py-4 space-y-4 rounded-lg border shadow-xl bg-white md:w-1/3
+                        hover:border-orange-500 cursor-pointer motion-safe:duration-300">
+                    <img src="./public/img/our_customers_rate_us.svg" alt=""
+                        class="md:w-3/4 lg:w-2/4 md:h-3/4 lg:h-1.5/4">
+                    <h5 class="text-center py-2 font-montserrat font-semibold text-16.48 leading-21.96
+                            lg:text-21.28 lg:leading-25.94">
+                        Our Customers rate us Highly</h5>
+                    <p class="text-center font_montserrat text-gray-500 font-medium text-16.48 leading-24.38
+                            lg:text-21.28 lg:leading-27.43 md:font-lightt">
+                        Over 50,000+ratings across all platforms. a 4.9 overall satisfaction rating. 5 star excellence
+                        award
+                        winner
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TESTED AND TRUSTED -->
+        <div class="flex flex-col mx-12 mb-12 mt-24">
+            <!-- WORDS -->
+            <div class="justify-center align-center text-center">
+                <p class="text-center text-[#F36103] font-montserrat font-medium text-15 md:text-19.2
+                lg:text-28 leading-10.97 md:leading-18.78 lg:leading-28.18">
+                    trusted and guaranteed
+                </p>
+                <p data-aos="flip-up" class="text-center px-4 py-2 md:py-4 font-raleway font-normal text-15 md:text-28
+                lg:text-36 leading-17.61 md:leading-24.38 lg:leading-29.26">
+                    Why you should Check your Car with Us
+
+                </p>
+            </div>
+
+        </div>
+
+        <div class="stared_list space-y-2 px-2 md:px-6 pb-4 md:pb-16">
+
+            <div class="flex mx-4 mb-4 lg:px-12 lg:pb-6">
+                <div class="mr-2.5">
+                    <img class=" w-[30px] h-30px] max-w-[15px] md:w-[40.74px] md:h-[21px]"
+                        src="./public/img/star_vector.svg" alt="">
+                </div>
+
+                <p class="font_montserrat text-justify md:text-center font-normal text-12 md:text-19.2 lg:text-24 
+                leading-19.2 md:leading-24 lg:leading-30.48">
+                    In the last two years (2020 and 2021), there were 143,888 vehicles reported as stolen.
+                    It is important to remember that purchasing a stolen vehicle is illegal and if caught,
+                    the police may seize the vehicle from you.
+                </p>
+            </div>
+            <div class="flex mx-4 mb-4 lg:px-12 lg:pb-6">
+                <div class="mr-2.5">
+                    <img class=" w-[30px] h-30px] max-w-[15px]
+                            md:w-[40.74px] md:h-[21px]" src="./public/img/star_vector.svg" alt="">
+                    <!-- 21px width or 15px -->
+                </div>
+                <p class="font_montserrat text-justify md:text-center font-normal text-12 md:text-19.2 lg:text-24 
+                leading-19.2 md:leading-24 lg:leading-30.48">
+                    1 in 7 vehicles checked on CarCheckUp have been written off by an insurance company
+                </p>
+            </div>
+            <div class="flex mx-4 mb-4 lg:px-12 lg:pb-6">
+                <div class="mr-2.5">
+                    <img class=" w-[30px] h-30px] max-w-[15px]
+                            md:w-[40.74px] md:h-[21px]" src="./public/img/star_vector.svg" alt="">
+                    <!-- 21px width or 15px -->
+                </div>
+                <p class="font_montserrat text-justify md:text-center font-normal text-12 md:text-19.2 lg:text-24 
+                leading-19.2 md:leading-24 lg:leading-30.48">
+                    1 in 6 vehicles checked on CarCheckUp have outstanding finance recorded against them?
+                    If you buy a car with outstanding finance, the finance company may repossess it from you.
+                </p>
+            </div>
+            <div class="flex mx-4 mb-4 lg:px-12 lg:pb-6">
+                <div class="mr-2.5">
+                    <img class=" w-[30px] h-30px] max-w-[15px]
+                            md:w-[40.74px] md:h-[21px]" src="./public/img/star_vector.svg" alt="">
+                    <!-- 21px width or 15px -->
+                </div>
+                <p class="font_montserrat text-justify md:text-center font-normal text-12 md:text-19.2 lg:text-24 
+                leading-19.2 md:leading-24 lg:leading-30.48">
+                    1 in 16 vehicles checked on CarCheckUp in 2021 had a mileage anomaly, which is equivalent to around
+                    6.6% of vehicles.
+                </p>
+            </div>
+
+        </div>
+
+        <div data-aos="fade-in" class="mt-2 md:mt-6 md:mx-24 lg:mx-32 my-4 md:my-12">
+
+            <div class="flex flex-col md:flex-row mx-16 md:mx-0 space-y-2 md:space-y-0 md:space-x-6">
+
+                <button class="text-white rounded-lg text-center hover:bg-black bg-orange_bg cursor-pointer full mx-auto
+                    w-full md:w-1/2">
+                    <p class="font-raleway font-medium text-12 md:text-16 lg:text-24 xl:text-32 leading-13.09 md:leading-18 lg:leading-37.57 p-3
+                        md:p-4 xl:p-6">
+                        Redeem a Prepaid Check
+                    </p>
+                </button>
+
+                <button class="text-white rounded-lg text-center hover:bg-black bg-orange_bg cursor-pointer full mx-auto
+                    w-full md:w-1/2">
+                    <p class="font-raleway font-medium text-12 md:text-16 lg:text-24 xl:text-32 leading-13.09 md:leading-18 lg:leading-37.57 p-3
+                        md:p-4 xl:p-6">
+                        Update an Exiting Car Check
+                    </p>
+                </button>
+            </div>
+
+        </div>
+
+        <div data-aos="zoom-in" class="flex flex-col mx-4 md:mx-8 p-4 items-center justify-center">
+            <h5 class="text-center font_raleway font-medium text-13.17 md:text-22 lg:text-48 leading-13.17
+                    md:leading-36 lg:leading-56.35">
+                Rated Excellent on Trustpilot reviews
+            </h5>
+            <div class="w-full h-auto"><img src="./public/img/trustpilot 2a.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- WHY CHOOSE US -->
+
+    <!-- PACKAGES -->
+    <section class="packages">
+        <div class="packages flex flex-col mx-4 pt-6 text-center items-center justify-center">
+            <p
+                class="font-montserrat orange_text py-1 font-medium text-13.17 md:text-20 lg:text-28 leading-9.56 md:leading-19.2 lg:leading-34.13">
+                OUR PACKAGES CONTENTS
+            </p>
+            <h6
+                class="text-center font-raleway py-1 font_medium text-13.44 md:text-25.6 lg:text-48 leading-15.78 md:leading-32.4 lg:leading-56.35">
+                What's in our car check report?
+            </h6>
+            <p data-aos="fade-right" data-aos-easing="ease-in-sine"
+                class="font-montserrat font-normal py-3 px-0.5 md:px-12 text-12 md:text-20 lg:text-28 leading-19.2 md:leading-21.96 lg:leading-34.13">
+                Our full vehicle history report is the most comprehensive and affordable car check service in the UK.
+                It will help you to make the right decision before buying your next used car. Our full vehicle check
+                provides
+                everything from basic checks, important checks and critical checks, which include:
+            </p>
+        </div>
+
+        <!-- THE CARDS -->
+        <div class="mx-4 md:mx-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 mb-12 mt-2 md:mt-5 gap-6">
+                <!-- CARD 1 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/police.svg" alt="" class="w-3/4 h-auto">
+                    </div>
+                    <h5
+                        class="text-center py-2 font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21 leading-10.23 md:leading-16 lg:leading-28.42">
+                        Police Stolen Check</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        To avoid falling prey to vehicle fraud, make sure to check if the vehicle that you're
+                        considering
+                        has been reported as stolen in the Police National Computer.
+                    </p>
+                </div>
+                <!-- CARD 2 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/outstanding.svg" alt="" class="w-3/4 h-auto">
+                    </div>
+                    <h5
+                        class="text-center py-2 font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21  leading-10.23 md:leading-16 lg:leading-28.42">
+                        Outstanding Finance</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        Did you know that 1 in 6 vehicles checked on CarCheckUp have outstanding finance recorded
+                        against
+                        them? In case you purchase a vehicle
+                        that still has an outstanding loan or hire purchase agreement, it's important to note that the
+                        finance company will maintain a legal interest
+                        in the vehicle until the loan is fully repaid.
+                    </p>
+                </div>
+                <!-- CARD 3 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/high_risk.svg" alt="" class="w-3/4 h-auto">
+                    </div>
+                    <h5
+                        class="text-center font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21 leading-10.23 md:leading-16 lg:leading-28.42">
+                        High Risk</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        It means that a third party has an interest in the vehicle and is monitoring its movement within
+                        the
+                        market to prevent it from being sold without proper title.
+                    </p>
+                </div>
+                <!-- CARD 4 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/milage.svg" alt="" class="w-full h-auto">
+                    </div>
+                    <h5
+                        class="text-center py-2 font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21  leading-10.23 md:leading-16 lg:leading-28.42">
+                        Milage Anomaly</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        The mileage record is compiled from a variety of sources and presented in chronological order,
+                        including the mileage reading,
+                        date, and the source of the information. It's important to verify the mileage readings and dates
+                        by
+                        cross-checking them with
+                        the MOT certificates and service records
+                    </p>
+                </div>
+                <!-- CARD 5 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/MOT.svg" alt="" class="w-full h-auto">
+                    </div>
+                    <h5
+                        class="text-center py-2 font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21  leading-10.23 md:leading-16 lg:leading-28.42">
+                        MOT History</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        This service allows you to access a vehicle's complete MOT history by simply entering its
+                        registration number. The MOT history data
+                        provides important information about a vehicle's past MOT tests, including the test date, the
+                        test
+                        result, and any advisory or failure notices.
+                    </p>
+                </div>
+                <!-- CARD 6 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg border shadow-xl bg-white">
+                    <div class="mx-auto">
+                        <img src="./public/img/our_package_img/condition.svg" alt="" class="w-full h-auto">
+                    </div>
+                    <h5
+                        class="text-center py-2 font-raleway font-semibold text-16.48 md:text-16 lg:text-24.21  leading-10.23 md:leading-16 lg:leading-28.42">
+                        Condition/Write-off</h5>
+                    <p
+                        class="text-center pt-0 font-montserrat text-gray-500 font-light text-16.48 md:text-16.15 leading-16.48 md:leading-12 lg:leading-19.69">
+                        We check whether a vehicle has been declared a total loss or written-off by an insurance company
+                        due
+                        to a damage or theft-related insurance claim.
+                        In the case of a damage-related insurance claim, the insurer has determined that the cost of
+                        repairing the vehicle is uneconomical.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col mx-4 pt-2 md:pt-4 text-center items-center justify-center">
+            <a href="#">
+                <p class="font-raleway font-medium text-16 md:text-24 lg:text-32 
+                leading-13.49 md:leading-24.38 lg:leading-37.57 orange_text hover:underline cursor-pointer">
+                    View All Car Checks
+                </p>
+            </a>
+        </div>
+
+    </section>
+    <!-- PACKAGES -->
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose-us">
+        <div class="mt-8 text-center justify-center items-center">
+            <p
+                class="font-raleway font-semibold pb-3 pt-3 md:pb-1 px-0.5 text-14.75 md:text-32 lg:text-48 leading-17.61 md:leading-37.57 lg:leading-56.35">
+                Why Choose Carcheck
+            </p>
+
+            <h6
+                class="font-montserrat orange_text pt-0 px-1 font-medium text-13.44 md:text-20 lg:text-28 leading-10.33 md:leading-24.38 lg:leading-34.13">
+                BENEFITS OF USING CARCHECK
+            </h6>
+        </div>
+
+        <div class="why-choose-us-pink">
+            <div class="why-choose-us-starred mx-4 md:mx-8 my-12 py-12">
+                <div class="gap-4 md:gap-8 grid md:grid-cols-2">
+                    <div class=" flex">
+                        <div class="w-[10%] md:w-[20%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                leading-16.48 md:leading-24.38 lg:leading-29.26">The Most Affordable Car Check</span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                leading-12.96 md:leading-16.48 lg:leading-20.29">With our rate of just £9.95,
+                                    not only are we the most affordable car check service in the UK, we provide the most
+                                    reliable,
+                                    cheapest car check services in the UK.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex">
+                        <div class="w-[15%] md:w-[35%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                leading-16.48 md:leading-24.38 lg:leading-29.26">Backed by Trusted Partners </span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                leading-12.96 md:leading-16.48 lg:leading-20.29">Backed by Trusted Partners
+                                    From the DVLA, Insurance Companies, Finance Houses to the Police National Computer,
+                                    MIAFTR,
+                                    and other providers, we use every available, dependable source to provide you with
+                                    the
+                                    most
+                                    comprehensive data about your vehicle.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex">
+                        <div class="w-[15%] md:w-[30%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                leading-16.48 md:leading-24.38 lg:leading-29.26">Exclusive offers for the Auto
+                                    Traders</span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                leading-12.96 md:leading-16.48 lg:leading-20.29">
+                                    Enjoy the trade deal packages starting from 20 up to 100 checks where you have to
+                                    pay
+                                    less than £3 per vehicle check report.
+                                    Receive the buyer's dashboard to acknowledge the car buyer's insights and access it
+                                    at
+                                    any time!
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="space-y-8"> -->
+                    <div class=" flex">
+                        <div class="w-[10%] md:w-[20%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                    leading-16.48 md:leading-24.38 lg:leading-29.26">The Most Affordable Car
+                                    Check</span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                    leading-12.96 md:leading-16.48 lg:leading-20.29">With our rate of just £9.95,
+                                    not only are we the most affordable car check service in the UK, we provide the most
+                                    reliable,
+                                    cheapest car check services in the UK.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex">
+                        <div class="w-[15%] md:w-[35%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                    leading-16.48 md:leading-24.38 lg:leading-29.26">Backed by Trusted Partners </span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                    leading-12.96 md:leading-16.48 lg:leading-20.29">Backed by Trusted Partners
+                                    From the DVLA, Insurance Companies, Finance Houses to the Police National Computer,
+                                    MIAFTR,
+                                    and other providers, we use every available, dependable source to provide you with
+                                    the
+                                    most
+                                    comprehensive data about your vehicle.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" flex">
+                        <div class="w-[15%] md:w-[30%] h-auto mt-1 mx-auto"><img src="./public/img/star_vector.svg"
+                                alt=""></div>
+                        <div class="px-1">
+                            <p class="flex flex-col space-y-2">
+                                <span class="font-montserrat font-medium text-12 md:text-20 lg:text-24
+                                    leading-16.48 md:leading-24.38 lg:leading-29.26">Exclusive offers for the Auto
+                                    Traders</span>
+                                <span class="font-montserrat font-light text-9.6 md:text-16 lg:text-20
+                                    leading-12.96 md:leading-16.48 lg:leading-20.29">
+                                    Enjoy the trade deal packages starting from 20 up to 100 checks where you have to
+                                    pay
+                                    less than £3 per vehicle check report.
+                                    Receive the buyer's dashboard to acknowledge the car buyer's insights and access it
+                                    at
+                                    any time!
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- END OF WHY CHOOSE US -->
+
+    <!-- PRICING -->
+    <section class="pricing">
+        <div class="buy-a-car text-center items-center justify-center mx-2 px-2 md:p-4 md:m-4 lg:p-10 lg:m-10">
+            <h1
+                class="font_raleway py-4 font-bold text-17.42 md:text-28 lg:text-48 leading-20.29 md:leading-32.4 lg:leading-56.35">
+                Buy a Car History Check for Later </h1>
+            <p
+                class="font-montserrat font-light text-12 md:text-18 lg:text-24 leading-14.29 md:leading-20.29 lg:leading-29.26">
+                If you are considering purchasing a vehicle, it's highly recommended that you check its full history
+                beforehand.
+                Failure to do so could result in unexpected issues such as outstanding finance, insurance write-offs,
+                condition record,
+                police stolen, colour change, plate change which may significantly impact the vehicle's value.
+            </p>
+        </div>
+
+        <div class="pricings mx-4 md:mx-8">
+            <div class="flex md:hidden">
+                <div class="swiper mySwiper mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div class="pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                                    transition-transform duration-3000 hover:scale-110">
+                                    <p
+                                        class="text-black py-4 md:pt-12 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Buy 3 Premium Checks
+                                    </p>
+
+                                    <p
+                                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Critical Checks
+                                    </p>
+                                    <div class="critical_checks">
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Outstanding Finance</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Condition/WriteOff</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Police Stolen</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            High Risk</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Milage Anomaly</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            MOT History</p>
+
+                                        <!-- View All/View Less button -->
+                                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                                            text-black hover:text-[#F36103]">
+                                                + Important Checks
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mx-8">
+                                        <button
+                                            class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                                            p-2 md:p-4">£24.90 (£4.98 each)</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div class="pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                                    transition-transform duration-3000 hover:scale-110">
+
+                                    <p
+                                        class="text-blue-700 text-center font_montserrat font-medium text-[15.6px] md:text-[24px] line-[10.37px] md:line-[25.92px]">
+                                        Most Popular
+                                    </p>
+                                    <p
+                                        class="text-black py-4 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Buy 3 Premium Checks
+                                    </p>
+
+                                    <p
+                                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Critical Checks
+                                    </p>
+
+                                    <div class="critical_checks">
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Outstanding Finance</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Condition/WriteOff</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Police Stolen</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            High Risk</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Milage Anomaly</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            MOT History</p>
+
+                                        <!-- View All/View Less button -->
+                                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                                        text-black hover:text-[#F36103]">
+                                                + Important Checks
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mx-8">
+                                        <button
+                                            class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                                            p-2 md:p-4">£19.95 (£6.65 each)</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mx-4">
+                                <div class="pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                                    transition-transform duration-3000 hover:scale-110">
+                                    <p
+                                        class="text-black py-4 md:pt-12 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Buy 3 Premium Checks
+                                    </p>
+
+                                    <p
+                                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                                        Critical Checks
+                                    </p>
+                                    <div class="critical_checks">
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Outstanding Finance</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Condition/WriteOff</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Police Stolen</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            High Risk</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            Milage Anomaly</p>
+                                        <p
+                                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                                            MOT History</p>
+
+                                        <!-- View All/View Less button -->
+                                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                                        text-black hover:text-[#F36103]">
+                                                + Important Checks
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mx-8">
+                                        <button
+                                            class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                                            p-2 md:p-4">£9.94</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="price-card hidden md:grid md:grid-cols-3 mb-12 mt-12 md:mt-5 gap-2 lg:gap-6">
+                <!-- FIRST CARD -->
+                <div class="mb-12 md:mt-6 pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                    transition-transform duration-3000 hover:scale-110">
+                    <p
+                        class="text-black py-4 md:pt-12 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Buy 3 Premium Checks
+                    </p>
+
+                    <p
+                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Critical Checks
+                    </p>
+                    <div class="critical_checks">
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Outstanding Finance</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Condition/WriteOff</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Police Stolen</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            High Risk</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Milage Anomaly</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            MOT History</p>
+
+                        <!-- View All/View Less button -->
+                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                             text-black hover:text-[#F36103]">
+                                + Important Checks
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mx-8">
+                        <button class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                            p-2 md:p-4">£24.90 (£4.98 each)</p>
+                        </button>
+                    </div>
+                </div>
+                <!-- MIDDLE CARD -->
+                <div class="mb-12 md:mt-6 pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                    transition-transform duration-3000 hover:scale-110">
+
+                    <p
+                        class="text-blue-700 text-center font_montserrat font-medium text-[15.6px] md:text-[24px] line-[10.37px] md:line-[25.92px]">
+                        Most Popular
+                    </p>
+                    <p
+                        class="text-black py-4 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Buy 3 Premium Checks
+                    </p>
+
+                    <p
+                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Critical Checks
+                    </p>
+
+                    <div class="critical_checks">
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Outstanding Finance</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Condition/WriteOff</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Police Stolen</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            High Risk</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Milage Anomaly</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            MOT History</p>
+
+                        <!-- View All/View Less button -->
+                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                         text-black hover:text-[#F36103]">
+                                + Important Checks
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mx-8">
+                        <button class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                            p-2 md:p-4">£19.95 (£6.65 each)</p>
+                        </button>
+                    </div>
+                </div>
+                <!-- THIRD CARD -->
+                <div class="mb-12 md:mt-6 pt-4 pb-2 items-center text-center rounded-lg shadow-md hover:border-orange-500 hover:shadow-orange-500 cursor-pointer
+                    transition-transform duration-3000 hover:scale-110">
+                    <p
+                        class="text-black py-4 md:pt-12 font-montserrat font-medium text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Buy 3 Premium Checks
+                    </p>
+
+                    <p
+                        class="text-center text-orange-500 py-4 font-montserrat font-light text-16 md:text-20 lg:text-28 leading-14.29 md:leading-24.38 lg:leading-30.48">
+                        Critical Checks
+                    </p>
+                    <div class="critical_checks">
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Outstanding Finance</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Condition/WriteOff</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Police Stolen</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            High Risk</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            Milage Anomaly</p>
+                        <p
+                            class="checklist relative overflow-hidden py-1 text-center font-light pb-4 font_montserrat text-zinc-700 text-12 md:text-16 lg:text-24 leading-9.56 md:leading-16.48 lg:leading-25.92 tracking-[-7]">
+                            MOT History</p>
+
+                        <!-- View All/View Less button -->
+                        <div class="text-center mx-auto pt-2 md:pt-4 pb-4 md:pb-8">
+                            <p id="checklist-toggle" class="font-montserrat font-normal text-center text-10.78 md:text-12.6 lg:text-19.2 leading-10.23 md:leading-16.48 lg:leading-20.29 tracking-[-7] cursor-pointer hover:underline
+                         text-black hover:text-[#F36103]">
+                                + Important Checks
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mx-8">
+                        <button class="my-4 w-full bg-orange_bg hover:bg-zinc-900 rounded-md text-white">
+                            <p class="font-helvetica text-center font-medium text-9.6 md:text-12.6 lg:text-19.2 leading-9.56 md:leading-14.29 lg:leading-20.29
+                            p-2 md:p-4">£9.94</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PRICING -->
+
+    <!-- FAQ SECTION -->
+    <section class="FAQ justify-center items-center">
+        <div class="pt-4 md:pt-8 text-center mx-auto mb-4">
+            <p
+                class="text-center font_raleway font-medium text-15 md:text-28 lg:text-48 leading-18.78 md:leading-32.4 lg:leading-56.35">
+                Frequently Asked Questions
+            </p>
+        </div>
+
+        <div class="questions mx-4 md:mx-8 space-y-1 md:space-y-2">
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        What is an HPI Check?</h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180 space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        How much does an HPI Check cost? </h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        Is there a Cheaper alternative to HPI Check? </h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        Why Perform a Vehicle History Check with Carcheck? </h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="pr-12 md:pr-0 text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        What are the differences between a Vehicle History Check and a Vehicle Pre-purchase Inspection?
+                    </h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="a_question relative w-full overflow-hidden border">
+                <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                                cursor-pointer">
+                <div class="bg-gray-200 h-12 w-full pl-2 pr-8 md:pl-5 flex items-center">
+                    <h1
+                        class="text-start font_raleway font-medium text-10 md:text-16 lg:text-25 leading-14.29 md:leading-24.38 lg:leading-29.35 text-black">
+                        How Comprehensive is Carcheck Report?</h1>
+                </div>
+
+                <div class="absolute top-3 right-3-mine text-white transition-transform duration-500 rotate-0
+                                peer-checked:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+
+                <div class="bg-white overflow-hidden transition-all duration-500
+                                max-h-0 peer-checked:max-h-40">
+                    <div class="p-4">
+                        <p
+                            class="text-start font-raleway font-medium text-12.6 md:text-16 lg:text-25 leading-20.29 md:leading-28.42 lg:leading-29.35">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam, molestiae iure ipsa
+                            quod tempora
+                            voluptas quis maxime nesciunt rerum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center mx-auto pt-4 md:pt-8 pb-8 md:pb-16 ">
+                <p id="viewallfaq" class="font-montserrat font-medium text-12 md:text-20 lg:text-28 leading-10.97 md:leading-25.94 lg:leading-34.13 cursor-pointer hover:underline
+                    text-black hover:text-[#F36103]">
+                    VIEW MORE</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- END OF FAQ SECTION -->
+
+    <!-- POPULAR CARS -->
+    <section class="popular-cars mx-4 md:mx-8">
+        <section class="popular-car-makes">
+            <div class="flex flex-col md:my-12 animate-slideInBottom">
+                <p
+                    class="text-[#F36103] font_raleway font-semibold text-16 md:text-32 lg:text-48 leading-18.78 md:leading-42.85 lg:leading-56.35 text-center">
+                    Popular Car Makes</p>
+                <p
+                    class="font_raleway font-normal text-11.2 md:text-20 lg:text-32 leading-15 md:leading-28 lg:leading-42.85 text-center">
+                    Explore the history of popular vehicle
+                    checks by make,
+                    model, and registration number in the list below.</p>
+            </div>
+        </section>
+
+        <section class="overview_section">
+            <div class="overview mt-8 mb-12">
+                <div class="flex flex-col">
+                    <table id="data-table" class="shadow-lg border-collapse bg-gray-50">
+                        <!-- Your table content here -->
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="footer" class="block">
+                                    <p
+                                        class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black hover:font-bold transition duration-300 hover:scale-110">
+                                        VOLKSWAGEN
+                                    </p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles have been inspected
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        FORD</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    834 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        VAUXHALL</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    737 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        BMW</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    506 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        MERCEDES-BENZ</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    704 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        AUDI</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    312 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        LAND ROVER</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    259 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        MINI</p>
+                                </a>
+                            </td></a>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    450 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <a href="#">
+                                    <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                        PEGEOUT</p>
+                                </a>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    600 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <!-- <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                    BUGATTI</p>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                    BUGATTI</p>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                    BUGATTI</p>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                    BUGATTI</p>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles has been inspected</p>
+                            </td>
+                        </tr>
+                        <tr class="flex flex-col md:flex-row mb-2">
+                            <td class="w-full md:w-1/3 dark_yellow text-white py-2 md:pt-6 lg:py-4">
+                                <p class="font_montserrat font-semibold text-9.2 md:text-18 lg:text-20 leading-9.07 md:leading-21.6 text-center cursor-pointer hover:text-black 
+                                        hover:font-bold transition duration-300 hover:scale-110">
+                                    BUGATTI</p>
+                            </td>
+                            <td class="w-full md:w-2/3 border border-[#ffc439] py-2 md:py-4 lg:py-2">
+                                <p
+                                    class="font_raleway font-light text-12.6 md:text-24 lg:text-30 leading-14.97 md:leading-35.22 text-center">
+                                    840 Vehicles has been inspected</p>
+                            </td>
+                        </tr> -->
+
+                    </table>
+
+                    <nav id="pagination" class="flex justify-center mt-8 space-x-3">
+                        <button id="prev-page" aria-label="Previous" class="pagination-button">Previous</button>
+                        <!-- Pagination buttons will be inserted dynamically here -->
+                        <button id="next-page" aria-label="Next" class="pagination-button">Next</button>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- END OF POPULAR CARS -->
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="first-footer bg-purple-50">
+            <div class="flex flex-row pt-6 md:pt-12 mx-2 md:mx-4 lg:mx-8 space-x-6 md:space-x-12">
+                <!-- FIRST COLUMN -->
+                <div class="w-1/2 md:w-1/3">
+                    <div class="text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-'-0.5%'">
+                                Premuim Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Certificate of Destruction Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle High Risk Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Condition Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Ved Co2 Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine and Technical Information Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Outstanding Finance Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Plate Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Weight and Dimension Details Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Motorcycle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Truck History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle CO2 Emission Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Performance Data Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VSC Count Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Imported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Number Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VIC Inspected Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Scrapped Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Previous Owners Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Check If Your Vehicle Was Used Before First Registration</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                VIN Lookup</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                    Know About Us</p>
+                            </a>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Product & Prices</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Frequently Asked Questions</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Contact Us</p>
+                            </a>
+
+                            <p class="pt-4 pb-2 font-semibold font_montserrat text-[10.34px] line-[7.72px]">Legal
+                                Information</p>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Terms & Conditions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD SECOND COLUMN -->
+                <div class="text-start w-1/2 md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Free Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Make and Model Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Exported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Wheel Plan Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Payment Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Car HPI Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Vehicle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Fuel Type Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Size Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Manufacture Year Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Last VSC Issue Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Mileage Issue Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free MOT History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle SORN Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Electric Vehicle Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Van History Check</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[0.5%]">
+                                    connect with Us</p>
+                            </a>
+
+                            <div class="social_icons items-start justify-start flex flex-row space-x-2 md:space-x-3">
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD THIRD COLUMN -->
+                <div class="text-start hidden md:flex md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#about-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Know About Us
+                            </p>
+                        </a>
+
+                        <a href="#product-prices">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Product & Prices
+                            </p>
+                        </a>
+
+                        <a href="#faq">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Frequently Asked Questions
+                            </p>
+                        </a>
+
+                        <a href="#contact-us">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Contact Us
+                            </p>
+                        </a>
+
+                        <a href="#legal-information">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Legal Information
+                            </p>
+                        </a>
+
+                        <a href="#terms-conditions">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Terms & Conditions
+                            </p>
+                        </a>
+
+                        <a href="#useful-links">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Useful Link
+                            </p>
+                        </a>
+
+                        <a href="#sample-report">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                See Sample Vehicle History Report
+                            </p>
+                        </a>
+
+                        <a href="#redeem-checks">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Redeem Prepaid Checks
+                            </p>
+                        </a>
+
+                        <a href="#connect-with-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Connect with Us
+                            </p>
+                        </a>
+
+                        <div class="social_icons items-start justify-start flex flex-row space-x-3">
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-center items-center mt-4 md:mt-8 md:pb-12">
+                <p class="text-center pb-2 font_montserrat font-semibold text-[19.2px] md:pb-8 md:text-32 lg:text-40 leading-23.4 md:leading-48.76 orange_text
+                        tracking-'-0.5%'">
+                    Download Our Mobile App
+                </p>
+                <div class="flex flex-row justify-center items-center md:space-x-6">
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/google play.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/apple store.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-footer mx-4 lg:mx-8">
+
+            <div class="sponsors mt-12 justify-evenly items-center flex flex-row mb-4 md:mb-12">
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Powered by</p>
+                    <img class="w-[89.69px] h-[29.01px] md:w-[262.24px] md:h-[56px] lg:w-[311.41px] lg:h-[100.74px]"
+                        src="./public/img/social_icon_imgs/experian.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        We Accept</p>
+                    <img class="w-[116.12px] h-[26.78px] md:w-[340.24px] md:h-[56px] lg:w-[403.7px] lg:h-[93.28px]"
+                        src="./public/img/social_icon_imgs/visa mastercard.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Secured With</p>
+                    <img class="w-[78px] h-[25.54px] md:w-[210.24px] md:h-[56px] lg:w-[271.7px] lg:h-[78.28px]"
+                        src="./public/img/social_icon_imgs/azure.svg" alt="">
+                </div>
+            </div>
+
+            <div class="justify-center items-center">
+                <p class="text-center font_montserrat font-light md:font-normal text-9.6 md:text-16 lg:text-20 leading-11.7 md:leading-24.38"
+                    style="letter-spacing: -0.5%;">
+                    Milena Software Ltd, a company registered in England and Wales with company number 12117374, is a
+                    VAT registered company, and its VAT Registration Number is GB358417280.
+                    Milena Software Ltd owns the rights to carcheckup.co.uk, a product offered on this website. Please
+                    note that we use cookies on this site. By continuing to browse and use this website,
+                    you are consenting to our use of cookies.
+                    All product names, logos, and brands featured on this website belong to their respective owners and
+                    are protected by copyright laws. All rights reserved.
+                </p>
+            </div>
+
+            <div
+                class="social_icons items-center justify-center mt-4 md:mt-8 mb-10 md:mb-20 flex flex-row space-x-1.5 lg:space-x-3">
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110" src="./public/img/social_icon_imgs/fb-icon.svg"
+                        alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer end -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({
+            // offset: 200, // offset (in px) from the original trigger point
+            // delay: 100, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+        }); 
+    </script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/faq.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./src/js/new-swiper.js"></script>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const viewToggle = document.getElementById('checklist-toggle');
+            const critical_checks = document.querySelectorAll('.checklist');
+            
+            // Initially hide all critical_checks except the first 4
+            critical_checks.forEach((question, index) => {
+                // if (index >= 4) {
+                question.style.maxHeight = '0';
+                question.style.opacity = '0';
+                question.style.overflow = 'hidden';
+                // }
+            });
+
+            // Toggle visibility of hidden critical_checks on "View All" click
+            viewToggle.addEventListener('click', function () {
+                critical_checks.forEach((question, index) => {
+                    // if (index >= 4) {
+                    if (question.style.maxHeight === '0px') {
+                        question.style.maxHeight = question.scrollHeight + 'px';
+                        question.style.opacity = '1';
+                        question.style.overflow = 'visible';
+                    } else {
+                        question.style.maxHeight = '0';
+                        question.style.opacity = '0';
+                        question.style.overflow = 'hidden';
+                    }
+                    // }
+                });
+
+                // Change text based on visibility
+                const isVisible = critical_checks[4].style.maxHeight !== '0px';
+                viewToggle.textContent = isVisible ? '- Important Checks' : '+ Important Checks';
+            });
+        });
+</script> -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCheckUp</title>
+    <!-- font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/style.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./public/new-swiper.css">
+</head>
+
+<body>
+
+
+
+    <div class="a_question relative w-full overflow-hidden border">
+        <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10
+                        cursor-pointer">
+        <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+            <p
+                class="font_montserrat py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                Overview </p>
+        </div>
+
+        <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0
+                        peer-checked:rotate-180 space-x-1">
+            <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                src="./public/img/report imgs/info-icon.svg" alt="">
+        </div>
+
+        <div class="bg-white overflow-hidden transition-all duration-500
+                        max-h-0 peer-checked:max-h-auto">
+            <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                <table class="shadow-lg border-collapse">
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Outstanding Finance
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Condition Write-off
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            Yes
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Milage Anomaly
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Police Stolen
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            High Risk Record
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            High Risk Record
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Used Before First Reg
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Previous Keepers
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            5
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Plate Change
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Color Change
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Scrapped
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            VIC Inspected
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            VIN ends with
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            **98322
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Engine Number
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            D4HABU556753
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Imported
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td
+                            class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            V5C Count
+                        </td>
+                        <td
+                            class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            6
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+        <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const viewToggle = document.getElementById('viewallfaq');
+    const questions = document.querySelectorAll('.a_question');
+    
+    // Initially hide all questions except the first 4
+    questions.forEach((question, index) => {
+        if (index >= 4) {
+        question.style.maxHeight = '0';
+        question.style.opacity = '0';
+        question.style.overflow = 'hidden';
+        }
+    });
+
+    // Toggle visibility of hidden questions on "View All" click
+    viewToggle.addEventListener('click', function () {
+        questions.forEach((question, index) => {
+            if (index >= 4) {
+            if (question.style.maxHeight === '0px') {
+                question.style.maxHeight = question.scrollHeight + 'px';
+                question.style.opacity = '1';
+                question.style.overflow = 'visible';
+            } else {
+                question.style.maxHeight = '0';
+                question.style.opacity = '0';
+                question.style.overflow = 'hidden';
+            }
+            }
+        });
+
+        // Change text based on visibility
+        const isVisible = questions[4].style.maxHeight !== '0px';
+        viewToggle.textContent = isVisible ? 'VIEW LESS' : 'VIEW MORE';
+    });
+});
+
+    </script> -->
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/faq.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="./src/js/new-swiper.js"></script>
+</body>
+
+</html>
+
+<!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tableRows = document.querySelectorAll('#pagination-container tr[data-page]');
+            const prevButton = document.getElementById('prev-page');
+            const nextButton = document.getElementById('next-page');
+            let currentPage = 1;
+    
+            function showPage(page) {
+                tableRows.forEach(row => {
+                    row.style.display = 'none';
+                });
+                const rowsToShow = document.querySelectorAll(`#pagination-container tr[data-page="${page}"]`);
+                rowsToShow.forEach(row => {
+                    row.style.display = '';
+                });
+            }
+    
+            function goToPage(page) {
+                if (page < 1 || page > tableRows.length) {
+                    return;
+                }
+                currentPage = page;
+                showPage(currentPage);
+            }
+    
+            prevButton.addEventListener('click', () => {
+                goToPage(currentPage - 1);
+            });
+    
+            nextButton.addEventListener('click', () => {
+                goToPage(currentPage + 1);
+            });
+    
+            showPage(currentPage);
+        });
+    </script> -->

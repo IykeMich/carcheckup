@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCheckUp</title>
+    <!-- font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/style.css">
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/new-swiper.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <section class="pb-24">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-[#9c9c9b]">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between py-3 md:py-6 mx-2 md:mx-4 lg:mx-8">
+                <!-- Logo -->
+                <div class="pt-1">
+                    <a href="homepage.html"><img src="/public/img/navbar logo.svg" class="h-10"
+                            alt="Carcheckup Logo" /></a>
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden space-x-5 lg:space-x-8 xl:space-x-12 md:flex">
+                    <a href="homepage.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Home</a>
+                    <a href="blog.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Blog</a>
+                    <a href="prices.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-500 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Prices</a>
+                    <a href="report-sample.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Report
+                        Sample</a>
+                    <a href="popular-checks.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Popular
+                        Checks</a>
+                    <a href="about-us.html"
+                        class="font_montserrat text-center font-normal hover:font-semibold transition duration-300 hover:scale-110 hover:text-custom-blue md:text-[14px] lg:text-[18px] xl:text-[21px]">Contact
+                        Us</a>
+                </div>
+                <!-- Button -->
+                <a href="sign-up.html" class="hidden p-2 px-6 py-auto md:px-2 font_montserrat font-medium hover:font-semibold transition duration-300 hover:scale-110 
+                    md:text-[12px] lg:text-[18px] xl:text-[20px] text-white  bg-nav_btn_bg rounded baseline
+                        hover:bg-orange-custom md:block">SIGN UP</a>
+
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="homepage.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="prices.html">Prices</a>
+                    <a href="report-sample.html">Report Sample</a>
+                    <a href="popular-checks.html">Popular Checks</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="sign-up.html">Sign Up</a>
+                </div>
+
+
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar End -->
+
+ 
+
+
+
+    <section class="checks_section">
+        <div class="checks mx-2 md:mx-4 lg:mx-8 mt-4 md:mt-8 justify-between items-center flex flex-col md:flex-row md:space-x-3">
+            
+            <div class="bg-orange_bg mb-2 py-2 md:py-4 rounded-md hover:bg-gray-950 cursor-pointer">
+                <p class="py-auto text-center px-2 md:px-6 lg:px-12 text-white font_montserrat font-medium  lg:font-bold text-[12px] lg:text-[14px] xl:text-[20px]">
+                    Buy 5 premuim checks £29.88
+                </p>
+            </div>
+            <div class="bg-orange_bg mb-2 py-2 md:py-4 rounded-md hover:bg-gray-950 cursor-pointer">
+                <p class="py-auto text-center px-2 md:px-6 lg:px-12 text-white font_montserrat font-medium  lg:font-bold text-[12px] lg:text-[14px] xl:text-[20px]">
+                    Buy 3 premuim checks £23.94
+                </p>
+            </div>
+            <div class="bg-orange_bg mb-2 py-2 md:py-4 rounded-md hover:bg-gray-950 cursor-pointer">
+                <p class="py-auto text-center px-2 md:px-6 lg:px-12 text-white font_montserrat font-medium  lg:font-bold text-[12px] lg:text-[14px] xl:text-[20px]">
+                    Buy 1 premuim check £11.93
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="brand_section mb-2">
+        <div class="mx-2 md:mx-4 lg:mx-12">
+            <div class="brand mt-12 md:mt-12 lg:mt-24 mx-4 flex flex-row space-x-2 md:space-x-20 items-center justify-center">
+                <div class="flex flex-col w-1/3 space-y-4 md:space-y-6">
+                    <img class="w-[300px] md:w-[401.44px] h-[14px] md:h-[37px]" src="./public/img/report imgs/VOLKSWAGEN CRAFTER.svg" alt="">
+                    <img class="w-[150px] md:w-[245.76px] h-[70px] md:h-[184px]" src="./public/img/report imgs/volkswagen 1.svg" alt="">
+                </div>
+                <div class="flex flex-col w-1/3">
+                    <img class="w-[250px] md:w-[334.46px] h-[64px] md:h-[125.22px]" src="./public/img/report imgs/exparian.svg" alt="">
+                    
+                </div>
+                <div class="flex flex-col w-1/3">
+                    <div class="LF14EGT text-center my-2 px-0 md:mr-10 lg:mr-16 xl:mr-20 bg-lf_yellow rounded-md">
+                        <p class="font_raleway md:font-medium xl:font-semibold text-[16px] md:text-[20px] lg:text-[28px] xl:text-[36px]">LF14EGT</p>
+                    </div>
+    
+                    <div class="hyundai">
+                        <img class="w-[200px] md:w-[245.76px] h-[92px] md:h-[184px]" src="./public/img/report imgs/2012 GREY HYUNDAI.svg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div class="extra_choice">
+             
+                <p class="pt-2 md:pt-8 text-center font_montserrat font-light text-[9px] md:text-[12px] lg:text-[20px] line-[24.38px]">Wrong Vehicle 
+                    <span class="pt-8 md:pt-4 text-orange_bg font_montserrat font-medium text-[9px] md:text-[12px] lg:text-[20px] line-[24.38px]">? Search again</span></p>
+            </div>
+    
+            <div class="no_issues mt-4 md:mt-8 mb-6 md:mb-12">
+                <div class=" flex flex-row space-x-2 lg:space-x-6">
+                    <div class="green_circle flex flex-row md:mr-2 lg:mr-4">
+                        <img class="mr-0.5 md:mr-2 w-[8px] md:w-[16px] md:h-[16px] lg:w-[24px] lg:h-[24px]" src="./public/img/report imgs/green circle.svg" alt="">
+                    <p class="font_poppins font-light text-[9px] md:text-[12px] lg:text-[18px] xl:text-[20px] line-[30px]">No Issues Detected</p>
+                    </div>
+                    <div class="green_circle flex flex-row md:mr-2 lg:mr-4">
+                        <img class="mr-0.5 md:mr-2 w-[8px] md:w-[16px] md:h-[16px] lg:w-[24px] lg:h-[24px]" src="./public/img/report imgs/orange circle.svg" alt="">
+                    <p class="font_poppins font-light text-[9px] md:text-[12px] lg:text-[18px] xl:text-[20px] line-[30px]">For Information</p>
+                    </div>
+                    <div class="green_circle flex flex-row md:mr-2 lg:mr-4">
+                        <img class="mr-0.5 md:mr-2 w-[8px] md:w-[16px] md:h-[16px] lg:w-[24px] lg:h-[24px]" src="./public/img/report imgs/purple.svg" alt="">
+                    <p class="font_poppins font-light text-[9px] md:text-[12px] lg:text-[18px] xl:text-[20px] line-[30px]">Need Attention</p>
+                    </div>
+                    <p class="hidden md:flex md:flex-row font_poppins justify-end items-end xl:ml-auto xl:mr-24 font-semibold text-[9px] md:text-[12px] lg:text-[16px] xl:text-[20px] line-[33px]">Report Date: April 25, 2023, 4:10 A.M.</p>
+                </div>
+                <p class="md:hidden font_poppins ml-2 pt-2 font-semibold text-[9px] md:text-[12px] lg:text-[16px] xl:text-[20px] line-[33px]">Report Date: April 25, 2023, 4:10 A.M.</p>
+    
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="warning">
+        <div class="mx-2 md:mx-4 lg:mx-12 text-center rounded-md py-4 md:py-8 warning_ox_blood text-white">
+            <div class="the-texts text-center px-2 md:px-12 xl:px-96">
+                <p class="font_montserrat font-semibold text-sm md:text-[16px] lg:text-[20px] xl:text-[24px] line[29.26px]">
+                    !! WARNING !!
+                </p>
+                <p class="font_montserrat font-semibold text-sm md:text-[16px] lg:text-[20px] xl:text-[24px] line[29.26px]">
+                    Category N total loss claim Non Structural Damage 
+                    See the Condition details
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="overview_section mb-12">
+        <div class="overview mt-8 mx-auto">
+            <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_montserrat py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> Overview </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+            </div>
+            <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                <table class="shadow-lg border-collapse">
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Outstanding Finance
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Condition Write-off
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            Yes
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Milage Anomaly
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Police Stolen
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            High Risk Record
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            High Risk Record
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Used Before First Reg
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Previous Keepers
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            5
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Plate Change
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Color Change
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Scrapped
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            VIC Inspected
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            VIN ends with
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            **98322
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Engine Number
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            D4HABU556753
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            Imported
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            No
+                        </td>
+                    </tr>
+                    <tr class="flex flex-row">
+                        <td class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            V5C Count
+                        </td>
+                        <td class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                            6
+                        </td>
+                    </tr>
+                    
+                    
+                </table>         
+            </div>
+
+            <div class="previous_keeper">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Previous Keeper’s History
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <thead>
+                            <tr class="flex flex-row border border-b-2 md:border-b-4 border-b-gray-400">
+                                <th class="w-1/3 border py-2 lg:py-4 font_montserrat font-raleway text-center text-[10px] md:text-[16px] lg:text-[22px] xl:text-[30px]">Date of Transaction</th>
+                                <th class="w-1/3 border py-2 lg:py-4 font_montserrat font-raleway text-center text-[10px] md:text-[16px] lg:text-[22px] xl:text-[30px]">No of Previous Keeper</th>
+                                <th class="w-1/3 border py-2 lg:py-4 font_montserrat font-raleway text-center text-[10px] md:text-[16px] lg:text-[22px] xl:text-[30px]">Date of Last Keeper Change</th>
+                            </tr>
+                        </thead>
+                        <tr class="flex flex-row">
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-09-14
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                4
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-08-13
+                            </td>                       
+                        </tr>    
+                        <tr class="flex flex-row">
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-06-15
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                3
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-05-27
+                            </td>                       
+                        </tr>    
+                        <tr class="flex flex-row">
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-06-02
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2017-12-23
+                            </td>                       
+                        </tr>    
+                        <tr class="flex flex-row">
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2015-06-14
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                1
+                            </td>                       
+                            <td class="font-normal border text-center w-1/3 py-2 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2015-05-27
+                            </td>                       
+                        </tr>    
+                    </table>         
+                </div>
+
+            </div>
+
+            <div class="plate_change">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Plate Change History
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                There is no Plate Change History record against this vehicle.
+                            </td>                                             
+                        </tr>           
+                    </table> 
+                </div>
+
+            </div>
+
+            <div class="outstanding_fin">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Oustanding Financial Details
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                There is no finance record against this vehicle.
+                            </td>                                             
+                        </tr>           
+                    </table> 
+                </div>
+
+            </div>
+
+            <div class="High_risk">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        High Risk Record Details
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                There is no finance record against this vehicle.
+                            </td>                                             
+                        </tr>           
+                    </table> 
+                </div>
+
+            </div>
+            
+            <div class="condition write offs">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Condition Write-off Details
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col relative overflow-x-auto">
+                    <table class="shadow-lg border-collapse">
+
+                        <thead class="rtl:text-center font_raleway font-normal text-[12px] md:text-[16px] xl:text-[24px]  line[12.61px]">
+                            <tr>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Date Removed</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Theft Indicator</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Loss Type</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">MIAF Entry Date</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Loss Date</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Date of Transactions</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Insurer Branch</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Insurer Code</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Model</th>
+                                <th scole="col" class="border px-6 py-4 md:py-6">Make</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="text-center font-medium font_montserrat border w-full text-[12px] md:text-[16px] xl:text-[24px]">
+                                <th scope="row" class="border pt-4 pb-8">0001-01-01 T00:00:00</th>
+                                <th class="border pt-4 pb-8">78</th>
+                                <th class="border pt-4 pb-8">0</th>
+                                <th class="border pt-4 pb-8">2022-02-21 T00:00:00</th>
+                                <th class="border pt-4 pb-8">2022-01-21T 00:00:00</th>
+                                <th class="border pt-4 pb-8">2022-01-21T 00:00:00</th>
+                                <th class="border pt-4 pb-8">None</th>
+                                <th class="border pt-4 pb-8">None</th> 
+                                <th class="border pt-4 pb-8">IX3</th> 
+                                <th class="border pt-4 pb-8">HYUN</th> 
+                            </tr>
+                        </tbody>
+
+                        <!-- <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                There is no finance record against this vehicle.
+                            </td>                                             
+                        </tr>            -->
+                    </table> 
+                </div>
+
+            </div>
+
+            <div class="Color_Change">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Color Change
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                There is no Color Change record against this vehicle
+                            </td>                                             
+                        </tr>           
+                    </table> 
+                </div>
+
+            </div>
+
+            <div class="Ploice_Stolen">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p class="font_raleway py-2 ml-auto text-center font-medium text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto"> 
+                        Police Stolen Record Details
+                    </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]" 
+                    src="./public/img/report imgs/info-icon.svg" alt="">  
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td class="font-medium bg-pink-50 font_montserrat border text-center w-full py-4 text-[12px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                No Police Stolen record against this vehicle.
+                            </td>                                             
+                        </tr>           
+                    </table> 
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="overview mt-8 mx-auto">
+            <div class="basics">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_montserrat py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Basic Check </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                MOT Status
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                Expiring (59 days left)
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                MOT Due
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                2023-11-16
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Type Approval Category
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                Taxed (Due: 2024-04-01)
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                MOT Record Count
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                11
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Vehicle age
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                11 Yrs -1 months
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Exported
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                No
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Milage issues
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                No
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                TAX Status
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                M1
+                            </td>
+                        </tr>
+    
+    
+    
+                    </table>
+                </div>
+            </div>
+
+            <div class="engine_info">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Engine and Technical Information </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Make
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                HYUNDAI
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Model
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                IX35
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Color
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                GREY
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Fuel Type
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                DIESEL
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Engine Size
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                1995
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Wheel Plan
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                2 AXLE RIGID BODY
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Door Plan
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                ESTATE
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Gear
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                6
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Transmission
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                MANUAL 6 GEARS
+                            </td>
+                        </tr>
+                        
+    
+    
+    
+                    </table>
+                </div>
+            </div>
+
+            <div class="engine_info">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Engine and Technical Information </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Driving Axle
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                ALL - SELECTED
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Power Delivery
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                NORMAL
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Type Approval Category
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                M1
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Primary Fuel Flag
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                Y
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Engine Description
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                199D4HA-A
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Engine Location
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                FRONT
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Engine Make
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                HYUNDAI
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Euro Status
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                5
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Bare
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                84
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Stroke
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                90
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Aspirations
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                TURBO
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Cylinder Arrangement
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                INLINE
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                No of Cylinders
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                4
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Valves Per Cylinder
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                4
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Valve Gear
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                DOHC
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="Vehicle Reg">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[14px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Vehicle Registration and Tax Information </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                First Registration
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                ALL - SELECTED
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Year of Manufacture
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                NORMAL
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Last VSC Issue
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                M1
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Tax Band
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                Y
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Tax Per Year
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                D4HA-A
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+            <div class="Performance Details">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Performance Details </p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Top Speed
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                112 Mph (181 Kpg)
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Power RPM
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                4000
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Powe BHP
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                134
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Power KW
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                100
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Torque RPM
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                2500
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Torque FTLB
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                236
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Torque NM
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                320
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+            <div class="Weight Details">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Weight and Dimension Details</p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Body Shape
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                NA
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Height
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                1670
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Kerb Weight
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                1679
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Car Length
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                4410
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Number Of Axles
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                2
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Number of Sales
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                5
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Rigid Artic
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                RIGID
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Wheel Base
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                SHORT WHEELBASE
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Width
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                1820
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+            <div class="Economic Details">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Economic and Environmental Details</p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+
+                <div class="mx-2 md:mx-4 lg:mx-12">
+                    <!-- <img class="md:h-[450px] md:w-[600px]" src="/public/img/report imgs/economic.svg" alt="" class=""> -->
+                    <img class="w-full h-auto md:w-3/5 md:h-2/5" src="/public/img/report imgs/economic.svg" alt="" class="">
+                </div>
+                
+
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Extra Urban
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                54.3 mpg
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Combined
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                48.7 mpg
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Urban Cold
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                41.5 mpg
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                CO2 Emission
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                154 g/km
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                Ved Co2 Band
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                6
+                            </td>
+                        </tr>                                                
+                    </table>
+                </div>
+            </div>
+
+            <div class="Milage History mb-12 md:mb-24">
+                <div class="mx-2 md:mx-4 lg:mx-12 mb-1 flex flex-row rounded-sm bg-blue-900 text-white mt-2 md:mt-4">
+                    <p
+                        class="font_raleway py-2 ml-auto text-center font-normal text-[16px] md:text-[22px] lg:text-[38px] line[44.61px] mr-auto">
+                        Milage History</p>
+                    <img class="items-end justify-end mr-2 md:mr-8 md:mt-2 lg:my-auto my-auto w-[24px] h-[24px] md:w-[32px] md:h-[32px] lg:w-[45px] lg:h-[45px]"
+                        src="./public/img/report imgs/info-icon.svg" alt="">
+                </div>
+
+                <div class="mx-2 md:mx-4 lg:mx-12 flex flex-col">
+                    <table class="shadow-lg border-collapse">
+                        <thead class="border border-b-2 md:border-b-4 border-b-gray-500 text-center py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                            <tr class="flex flex-row">
+                                <td class="font-medium font_raleway border text-center w-1/2 py-2 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[36px]">Date</td>
+                                <td class="font-medium font_raleway border text-center w-1/2 py-2 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[36px]">Milage Record</td>
+                            </tr>
+                        </thead>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2022-11-17
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                79,212
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2021-11-23
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                76,522
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2020-12-02
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                41.5 mpg
+                            </td>
+                        </tr>
+                        <tr class="flex flex-row">
+                            <td
+                                class="font-normal border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px]">
+                                2019-12-04
+                            </td>
+                            <td
+                                class="font-medium border text-center w-1/2 py-2 text-[14px] md:text-[20px] lg:text-[22px] xl:text-[30px] hover:bg-green-800">
+                                66,922
+                            </td>
+                        </tr>                                                
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="first-footer bg-purple-50">
+            <div class="flex flex-row pt-6 md:pt-12 mx-4 lg:mx-8 space-x-6 md:space-x-12">
+                <!-- FIRST COLUMN -->
+                <div class="w-1/2 md:w-1/3">
+                    <div class="text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-'-0.5%'">
+                                Premuim Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Certificate of Destruction Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle High Risk Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Condition Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Ved Co2 Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine and Technical Information Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Outstanding Finance Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Plate Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Weight and Dimension Details Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Motorcycle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Truck History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle CO2 Emission Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Performance Data Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Band Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VSC Count Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Imported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Number Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle VIC Inspected Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Scrapped Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Change History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Previous Owners Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Check If Your Vehicle Was Used Before First Registration</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                VIN Lookup</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                    Know About Us</p>
+                            </a>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Product & Prices</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Frequently Asked Questions</p>
+                            </a>
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Contact Us</p>
+                            </a>
+
+                            <p class="pt-4 pb-2 font-semibold font_montserrat text-[10.34px] line-[7.72px]">Legal
+                                Information</p>
+
+                            <a href="#">
+                                <p
+                                    class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                    Terms & Conditions</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD SECOND COLUMN -->
+                <div class="text-start w-1/2 md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Free Checks</p>
+                        </a>
+
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Make and Model Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Type Approval Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Exported Record Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Wheel Plan Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Colour Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Tax Payment Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Car HPI Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Vehicle History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Fuel Type Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Engine Size Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Manufacture Year Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle Last VSC Issue Date Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Mileage Issue Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free MOT History Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Vehicle SORN Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Electric Vehicle Check</p>
+                        </a>
+                        <a href="#">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Free Van History Check</p>
+                        </a>
+
+                        <div class="md:hidden">
+                            <a href="#">
+                                <p
+                                    class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[0.5%]">
+                                    connect with Us</p>
+                            </a>
+
+                            <div class="social_icons items-start justify-start flex flex-row space-x-2 md:space-x-3">
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                                <a href="#"><img
+                                        class="w-[18px] h-[24px] hover:border-orange-500 hover:rounded-sm md:hover:rounded-lg md:hover:border"
+                                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MD THIRD COLUMN -->
+                <div class="text-start hidden md:flex md:w-1/3">
+                    <div class="first_col text-start">
+                        <a href="#about-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Know About Us
+                            </p>
+                        </a>
+
+                        <a href="#product-prices">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Product & Prices
+                            </p>
+                        </a>
+
+                        <a href="#faq">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Frequently Asked Questions
+                            </p>
+                        </a>
+
+                        <a href="#contact-us">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Contact Us
+                            </p>
+                        </a>
+
+                        <a href="#legal-information">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Legal Information
+                            </p>
+                        </a>
+
+                        <a href="#terms-conditions">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Terms & Conditions
+                            </p>
+                        </a>
+
+                        <a href="#useful-links">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Useful Link
+                            </p>
+                        </a>
+
+                        <a href="#sample-report">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                See Sample Vehicle History Report
+                            </p>
+                        </a>
+
+                        <a href="#redeem-checks">
+                            <p
+                                class="pb-2 font_montserrat font-normal text-8.4 md:text-14 lg:text-20 leading-9.01 md:leading-24.38 tracking-'-0.5%'">
+                                Redeem Prepaid Checks
+                            </p>
+                        </a>
+
+                        <a href="#connect-with-us">
+                            <p
+                                class="py-4 md:pt-3 md:pb-5 font-semibold font_montserrat text-12.6 md:text-16 lg:text-20 leading-7.72 md:leading-24.38 tracking-[-0.5%]">
+                                Connect with Us
+                            </p>
+                        </a>
+
+                        <div class="social_icons items-start justify-start flex flex-row space-x-3">
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/fb-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                            <a href=""><img
+                                    class="hover:border-orange-500 hover:rounded-lg hover:border transition duration-300 hover:scale-110"
+                                    src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-center items-center mt-4 md:mt-8 md:pb-12">
+                <p class="text-center pb-2 font_montserrat font-semibold text-[19.2px] md:pb-8 md:text-32 lg:text-40 leading-23.4 md:leading-48.76 orange_text
+                        tracking-'-0.5%'">
+                    Download Our Mobile App
+                </p>
+                <div class="flex flex-row justify-center items-center md:space-x-6">
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/google play.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="w-[124.9px] h-[39px] md:w-[240px] md:h-[87px] lg:w-[361.4px] lg:h-[113.1px]"
+                            src="./public/img/social_icon_imgs/apple store.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-footer mx-4 lg:mx-8">
+
+            <div class="sponsors mt-12 justify-evenly items-center flex flex-row mb-4 md:mb-12">
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Powered by</p>
+                    <img class="w-[89.69px] h-[29.01px] md:w-[262.24px] md:h-[56px] lg:w-[311.41px] lg:h-[100.74px]"
+                        src="./public/img/social_icon_imgs/experian.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        We Accept</p>
+                    <img class="w-[116.12px] h-[26.78px] md:w-[340.24px] md:h-[56px] lg:w-[403.7px] lg:h-[93.28px]"
+                        src="./public/img/social_icon_imgs/visa mastercard.svg" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <p
+                        class="font_raleway font-light md:font-bold text-[10px] md:text-[16px] lg:text-[28px] line-[11.74px] md:line-[32.87px] text-center pb-2 md:pb-4">
+                        Secured With</p>
+                    <img class="w-[78px] h-[25.54px] md:w-[210.24px] md:h-[56px] lg:w-[271.7px] lg:h-[78.28px]"
+                        src="./public/img/social_icon_imgs/azure.svg" alt="">
+                </div>
+            </div>
+
+            <div class="justify-center items-center">
+                <p class="text-center font_montserrat font-light md:font-normal text-9.6 md:text-16 lg:text-20 leading-11.7 md:leading-24.38"
+                    style="letter-spacing: -0.5%;">
+                    Milena Software Ltd, a company registered in England and Wales with company number 12117374, is a
+                    VAT registered company, and its VAT Registration Number is GB358417280.
+                    Milena Software Ltd owns the rights to carcheckup.co.uk, a product offered on this website. Please
+                    note that we use cookies on this site. By continuing to browse and use this website,
+                    you are consenting to our use of cookies.
+                    All product names, logos, and brands featured on this website belong to their respective owners and
+                    are protected by copyright laws. All rights reserved.
+                </p>
+            </div>
+
+            <div
+                class="social_icons items-center justify-center mt-4 md:mt-8 mb-10 md:mb-20 flex flex-row space-x-1.5 lg:space-x-3">
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110" src="./public/img/social_icon_imgs/fb-icon.svg"
+                        alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/instagram-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/twitter-icon.svg" alt=""></a>
+                <a href="#"><img class="w-[23.04px] h-[23.04px] md:w-[32px] md:h-[32px] lg:w-[48px] lg:h-[48px]  hover:border-orange-500 hover:rounded-lg hover:border
+                            transition duration-300 hover:scale-110"
+                        src="./public/img/social_icon_imgs/youtube-icon.svg" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({
+            // offset: 200, // offset (in px) from the original trigger point
+            // delay: 100, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+        }); 
+    </script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/faq.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="./src/js/new-swiper.js"></script>
+</body>
+
+</html>
