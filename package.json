@@ -17,8 +17,5 @@
   "dependencies": {
     "aos": "^2.3.4",
     "date-fns": "^3.6.0"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   }
 }
