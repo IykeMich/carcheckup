@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=20.13.1"
   }
 }
